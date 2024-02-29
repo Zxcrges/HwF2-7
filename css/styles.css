@@ -1,0 +1,63 @@
+h1,
+h2,
+h3,
+h4,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.list {
+    list-style: none;
+    padding: 0;
+}
+.link {
+    text-decoration: none;
+}
+.container {
+    width: 1400px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.square {
+    width: 100px;
+    height: 100px;
+    background-color: paleturquoise;
+    position: absolute;
+    right: 850px;
+    bottom: 400px;
+    border: 2px solid rgb(144, 199, 199);
+    animation: square 3s infinite ;
+}
+.square:hover {
+    animation-play-state: paused;
+}
+@keyframes square {
+    0% {
+        transform: translate(0, 0);
+    }
+    20% {
+        transform: translateY(100px);
+    }
+    40% {
+        transform: translateX(100px);
+    }
+    /* 60% {
+        transform: translateX(-50px);
+    }
+    80% {
+        transform: translateY(50px);
+    }
+    100% {
+        transform: translateY(0, 0);
+    } */
+}
